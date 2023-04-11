@@ -1,7 +1,8 @@
 FROM node:16.3.0-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+COPY yarn.lock ./
+RUN yarn install
 COPY . .
 RUN npm run build
 
@@ -10,7 +11,8 @@ ENV NODE_ENV production
 ENV NEW_RELIC_HOME ./build
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --only=production
+COPY yarn.lock ./
+RUN yarn install
 COPY --chown=node:node --from=builder ./app/build ./build
 USER node
 CMD ["npm", "start"]

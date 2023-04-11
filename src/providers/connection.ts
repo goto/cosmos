@@ -24,7 +24,10 @@ function santitizedCubeName(name: string) {
   return patt.test(camelCaseName) ? camelCaseName : `Cube${camelCaseName}`;
 }
 
-function sanitizeTableSchema(tableSchame: { cube: string; joins: any[] }) {
+function sanitizeTableSchema(tableSchame: {
+  cube: string;
+  joins: { cubeToJoin: string }[];
+}) {
   const joins = tableSchame.joins.map((j) => {
     return { ...j, cubeToJoin: santitizedCubeName(j.cubeToJoin) };
   });
@@ -70,8 +73,7 @@ export default class ConnectionProvider {
     try {
       await this.driver.testConnection();
       return 'Success';
-    } catch (err) {
-      console.log(err);
+    } catch {
       return 'Failure';
     }
   }
