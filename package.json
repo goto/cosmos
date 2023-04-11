@@ -12,7 +12,7 @@
     "prebuild": "npm run clean",
     "build": "ttsc -p tsconfig.build.json",
     "dev": "nodemon",
-    "test": "jest"
+    "test": "jest --silent"
   },
   "repository": {
     "type": "git",
