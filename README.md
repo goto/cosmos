@@ -1,14 +1,14 @@
 # Cosmos
 
-[![node-ci](https://github.com/odpf/cosmos/actions/workflows/test.yml/badge.svg)](https://github.com/odpf/cosmos/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/odpf/cosmos/branch/main/graph/badge.svg?token=2CkqMa9YmH)](https://codecov.io/gh/odpf/cosmos)
+[![node-ci](https://github.com/goto/cosmos/actions/workflows/test.yml/badge.svg)](https://github.com/goto/cosmos/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/goto/cosmos/branch/main/graph/badge.svg?token=2CkqMa9YmH)](https://codecov.io/gh/goto/cosmos)
 
 ## Getting Started
 
-Cosmos Docker image can be found [here](https://github.com/orgs/odpf/packages?repo_name=cosmos)
+Cosmos Docker image can be found [here](https://github.com/orgs/goto/packages?repo_name=cosmos)
 
 ```sh
-docker run -e MONGODB_HOST=mongodb://127.0.0.1:27017/cosmos -p 8000:8000 docker.pkg.github.com/odpf/cosmos/cosmos
+docker run -e MONGODB_HOST=mongodb://127.0.0.1:27017/cosmos -p 8000:8000 docker.pkg.github.com/goto/cosmos/cosmos
 ```
 
 Visit [http://localhost:8000/documentation](http://localhost:8000/documentation) to view API documentation.
@@ -33,7 +33,7 @@ CUBE_URL (default: "http://localhost:4000" )
 1. Clone the repo
 
    ```sh
-   $ git clone https://github.com/odpf/cosmos
+   $ git clone https://github.com/goto/cosmos
    $ cd cosmos
    ```
 
@@ -71,7 +71,7 @@ $ npm test
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags](https://github.com/odpf/cosmos/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags](https://github.com/goto/cosmos/tags).
 
 ## License
 

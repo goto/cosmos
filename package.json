@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/odpf/cosmos.git"
+    "url": "git+https://github.com/goto/cosmos.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/odpf/cosmos/issues"
+    "url": "https://github.com/goto/cosmos/issues"
   },
-  "homepage": "https://github.com/odpf/cosmos#readme",
+  "homepage": "https://github.com/goto/cosmos#readme",
   "devDependencies": {
     "@types/confidence": "^1.4.30",
     "@types/faker": "^5.5.6",

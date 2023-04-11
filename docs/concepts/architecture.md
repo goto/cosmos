@@ -16,7 +16,7 @@ Cosmos is developed with
 In order to install this project locally, you can follow the instructions below:
 
 ```text
-$ git clone git@github.com:odpf/cosmos.git
+$ git clone git@github.com:goto/cosmos.git
 $ cd cosmos
 $ docker-compose up
 ```
