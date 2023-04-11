@@ -20,4 +20,4 @@ gh release create <tag-version> -F CHANGELOG.md
 
 - For new major or minor release, create and check out the release branch for the new stream, e.g. `v0.6-branch`. For a patch version, check out the stream's release branch.
 - We use an [open source change log generator](https://github.com/conventional-changelog/standard-version) to generate changelogs.
-- Update the [CHANGELOG.md](https://github.com/odpf/cosmos/blob/master/CHANGELOG.md). See the [Creating a change log](release_process.md#creating-a-change-log) guide and commit
+- Update the [CHANGELOG.md](https://github.com/goto/cosmos/blob/master/CHANGELOG.md). See the [Creating a change log](release_process.md#creating-a-change-log) guide and commit

@@ -11,7 +11,7 @@ describe('Metric/Meta::Resource', () => {
       const spy = jest.spyOn(Metric, 'findByUrn').mockResolvedValueOnce(null);
       try {
         await Resource.list('metricUrn');
-      } catch (e) {
+      } catch (e: any) {
         expect(e.message).toEqual('Metric not found for urn: metricUrn');
       }
       expect(spy).toHaveBeenCalledWith('metricUrn');
@@ -33,7 +33,7 @@ describe('Metric/Meta::Resource', () => {
       const spy = jest.spyOn(Metric, 'findByUrn').mockResolvedValueOnce(null);
       try {
         await Resource.get('metricUrn', 'meta1');
-      } catch (e) {
+      } catch (e: any) {
         expect(e.message).toEqual('Metric not found for urn: metricUrn');
       }
       expect(spy).toHaveBeenCalledWith('metricUrn');
@@ -49,7 +49,7 @@ describe('Metric/Meta::Resource', () => {
       const spy = jest.spyOn(Metric, 'findByUrn').mockResolvedValueOnce(metric);
       try {
         await Resource.get('metricUrn', 'meta1');
-      } catch (e) {
+      } catch (e: any) {
         expect(e.message).toEqual('Meta meta1 not found for Metric: metricUrn');
       }
       expect(spy).toHaveBeenCalledWith('metricUrn');
@@ -103,7 +103,7 @@ describe('Metric/Meta::Resource', () => {
       const spy = jest.spyOn(Metric, 'findByUrn').mockResolvedValueOnce(null);
       try {
         await Resource.update(urn, metaName, updatePayload);
-      } catch (e) {
+      } catch (e: any) {
         expect(e.message).toEqual('Metric not found for urn: test-urn');
       }
       expect(spy).toHaveBeenCalledWith('test-urn');
@@ -122,7 +122,7 @@ describe('Metric/Meta::Resource', () => {
       const spy = jest.spyOn(Metric, 'findByUrn').mockResolvedValueOnce(metric);
       try {
         await Resource.update(urn, metaName, updatePayload);
-      } catch (e) {
+      } catch (e: any) {
         expect(e.message).toEqual('Meta meta1 not found for Metric: test-urn');
       }
       expect(spy).toHaveBeenCalledWith('test-urn');
@@ -169,7 +169,7 @@ describe('Metric/Meta::Resource', () => {
       const spy = jest.spyOn(Metric, 'findByUrn').mockResolvedValueOnce(null);
       try {
         await Resource.deleteMeta(urn, metaName);
-      } catch (e) {
+      } catch (e: any) {
         expect(e.message).toEqual('Metric not found for urn: test-urn');
       }
       expect(spy).toHaveBeenCalledWith('test-urn');
@@ -187,7 +187,7 @@ describe('Metric/Meta::Resource', () => {
       const spy = jest.spyOn(Metric, 'findByUrn').mockResolvedValueOnce(metric);
       try {
         await Resource.deleteMeta(urn, metaName);
-      } catch (e) {
+      } catch (e: any) {
         expect(e.message).toEqual('Meta meta1 not found for Metric: test-urn');
       }
       expect(spy).toHaveBeenCalledWith('test-urn');

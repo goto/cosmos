@@ -1,14 +1,14 @@
 # Deployment
 
-Deploying Cosmos is very simple with the docker image. You can find the cosmos docker image on [dockerhub](https://hub.docker.com/r/odpf/cosmos).
+Deploying Cosmos is very simple with the docker image. You can find the cosmos docker image on [dockerhub](https://hub.docker.com/r/gotocompany/cosmos).
 
 ## Pre-requisites
 
 1. Cosmos needs a MongoDB connection.
-2. [Cube.js](https://hub.docker.com/r/odpf/cosmos-cube) instance running.
+2. [Cube.js](https://hub.docker.com/r/gotocompany/cosmos-cube) instance running.
 
 ```
-docker run -e MONGODB_HOST=mongodb://127.0.0.1:27017/cosmos -p 8000:8000 odpf/cosmos
+docker run -e MONGODB_HOST=mongodb://127.0.0.1:27017/cosmos -p 8000:8000 gotocompany/cosmos
 ```
 
 ## Environment Variables

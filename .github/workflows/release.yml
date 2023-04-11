@@ -14,12 +14,6 @@ jobs:
       - name: Get release tag
         id: get_version
         uses: battila7/get-version-action@v2
-      - name: Login to GitHub Packages Docker Registry
-        uses: docker/login-action@v1
-        with:
-          registry: docker.pkg.github.com
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
@@ -31,17 +25,13 @@ jobs:
           context: .
           push: true
           tags: |
-            docker.pkg.github.com/${{ github.repository }}/cosmos:latest
-            docker.pkg.github.com/${{ github.repository }}/cosmos:${{ steps.get_version.outputs.version-without-v }}
-            odpf/cosmos:latest
-            odpf/cosmos:${{ steps.get_version.outputs.version-without-v }}
+            gotocompany/cosmos:latest
+            gotocompany/cosmos:${{ steps.get_version.outputs.version-without-v }}
       - name: Build and Push Cube
         uses: docker/build-push-action@v2
         with:
           context: ./cube-server
           push: true
           tags: |
-            docker.pkg.github.com/${{ github.repository }}/cosmos-cube:latest
-            docker.pkg.github.com/${{ github.repository }}/cosmos-cube:${{ steps.get_version.outputs.version-without-v }}
-            odpf/cosmos-cube:latest
-            odpf/cosmos-cube:${{ steps.get_version.outputs.version-without-v }}
+            gotocompany/cosmos-cube:latest
+            gotocompany/cosmos-cube:${{ steps.get_version.outputs.version-without-v }}
