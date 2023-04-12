@@ -1,4 +1,4 @@
-import { IFieldsListItem, SupportedDBType } from 'src/types';
+import { IFieldsListItem, SupportedDBType } from '../../types';
 import Fields from './fields';
 
 export const getFields = async (): Promise<IFieldsListItem[]> => {

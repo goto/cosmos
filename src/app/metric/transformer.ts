@@ -1,8 +1,8 @@
-import * as Adapter from 'src/lib/adapter';
+import * as Adapter from '../../lib/adapter';
 import {
   ICreateMetricPayload,
   ICreateMetricTransformedPayload
-} from 'src/types';
+} from '../../types';
 
 export async function create(
   data: ICreateMetricPayload

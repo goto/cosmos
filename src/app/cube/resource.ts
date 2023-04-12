@@ -1,10 +1,10 @@
-import Cube from 'src/models/cube';
+import Cube from '../../models/cube';
 import {
   ICubeDocument,
   ICreateCubePayload,
   ICubeListQuery,
   IUpdateCubePayload
-} from 'src/types';
+} from '../../types';
 import * as Transformer from './transformer';
 
 export const list = async (

@@ -1,5 +1,5 @@
 import * as Joi from 'joi';
-import { SupportedDBs } from 'src/config/constants';
+import { SupportedDBs } from '../../config/constants';
 
 const suppotedTypeValidation = Joi.string()
   .valid(...SupportedDBs)

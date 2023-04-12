@@ -1,4 +1,4 @@
-import { IFieldsMap } from 'src/types';
+import { IFieldsMap } from '../../types';
 
 const fieldsMap: IFieldsMap = {
   postgres: {

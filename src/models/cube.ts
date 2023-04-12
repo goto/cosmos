@@ -5,7 +5,7 @@ import {
   ICubeDocument,
   ICubeListQuery,
   ICubesStats
-} from 'src/types';
+} from '../types';
 
 export interface ICubeModel extends Model<ICubeDocument> {
   list(query: ICubeListQuery): Promise<Array<ICubeDocument>>;

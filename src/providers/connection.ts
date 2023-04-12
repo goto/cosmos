@@ -1,13 +1,13 @@
 import { CubejsServerCore } from '@cubejs-backend/server-core';
 import { BaseDriver } from '@cubejs-backend/query-orchestrator';
+import { ScaffoldingTemplate } from '@cubejs-backend/schema-compiler/dist/src/scaffolding/ScaffoldingTemplate';
+import { ScaffoldingSchema } from '@cubejs-backend/schema-compiler/dist/src/scaffolding/ScaffoldingSchema';
 import {
   SupportedDBType,
   IPGTablesDetails,
   ITableListItem,
   IPGTablesResult
-} from 'src/types';
-import { ScaffoldingTemplate } from '@cubejs-backend/schema-compiler/dist/src/scaffolding/ScaffoldingTemplate';
-import { ScaffoldingSchema } from '@cubejs-backend/schema-compiler/dist/src/scaffolding/ScaffoldingSchema';
+} from '../types';
 
 const PG_TABLE_QUERY = `SELECT table_name, table_schema FROM information_schema.tables WHERE table_type='BASE TABLE' AND table_schema='public';`;
 const PG_DESCRIBE_TABLE_QUERY = `SELECT table_catalog, table_name, column_name, data_type FROM information_schema.columns WHERE table_name=$1;`;

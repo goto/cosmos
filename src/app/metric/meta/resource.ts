@@ -1,5 +1,5 @@
 import * as Boom from '@hapi/boom';
-import Metric from 'src/models/metric';
+import Metric from '../../../models/metric';
 
 type MetaFields = Map<string, string>;
 

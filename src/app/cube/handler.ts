@@ -4,7 +4,7 @@ import {
   ICreateCubePayload,
   ICubeListQuery,
   IUpdateCubePayload
-} from 'src/types';
+} from '../../types';
 import * as Resource from './resource';
 import * as Schema from './schema';
 

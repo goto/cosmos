@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import * as Config from 'src/config/config';
+import * as Config from '../config/config';
 
 const algorithm = 'aes-256-ctr';
 const secretKey = Config.get<string>('/encryption_secrect_key');

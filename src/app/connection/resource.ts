@@ -1,6 +1,6 @@
-import Connection from 'src/models/connection';
-import Cube from 'src/models/cube';
-import * as CubeTransformer from 'src/app/cube/transformer';
+import Connection from '../../models/connection';
+import Cube from '../../models/cube';
+import * as CubeTransformer from '../../app/cube/transformer';
 
 import {
   ICreateConnectionPayload,
@@ -8,8 +8,8 @@ import {
   IPGTablesDetails,
   ITableListItem,
   ICubeDocument
-} from 'src/types';
-import ConnectionProvider from 'src/providers/connection';
+} from '../../types';
+import ConnectionProvider from '../../providers/connection';
 import * as Transformer from './transformer';
 
 export const list = async (): Promise<IConnectionResponse[]> => {

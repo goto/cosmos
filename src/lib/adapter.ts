@@ -1,6 +1,6 @@
 import { v1 as uuidv1 } from 'uuid';
-import { encrypt, decrypt } from 'src/lib/utils';
-import { ICreateConnectionPayload } from 'src/types';
+import { encrypt, decrypt } from './utils';
+import { ICreateConnectionPayload } from '../types';
 
 export function urn<T>(data: T): T & { urn: string } {
   const uuid = uuidv1();

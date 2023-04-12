@@ -1,6 +1,6 @@
 import Hapi from '@hapi/hapi';
 import Boom from '@hapi/boom';
-import { ICreateMetricPayload, IUpdateMetricPayload } from 'src/types';
+import { ICreateMetricPayload, IUpdateMetricPayload } from '../../types';
 import * as Resource from './resource';
 import * as Schema from './schema';
 

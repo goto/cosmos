@@ -1,5 +1,5 @@
 import mongoose, { Schema, Model } from 'mongoose';
-import { IConnectionDocument, ICreateConnectionPayload } from 'src/types';
+import { IConnectionDocument, ICreateConnectionPayload } from '../types';
 
 export interface IConnectionModel extends Model<IConnectionDocument> {
   list(): Promise<Array<IConnectionDocument>>;
