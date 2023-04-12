@@ -1,5 +1,5 @@
-import * as Adapter from 'src/lib/adapter';
-import { ICreateCubePayload, ICreateCubeTransformedPayload } from 'src/types';
+import * as Adapter from '../../lib/adapter';
+import { ICreateCubePayload, ICreateCubeTransformedPayload } from '../../types';
 
 export async function create(
   data: ICreateCubePayload

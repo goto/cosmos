@@ -1,5 +1,5 @@
 import * as Joi from 'joi';
-import { SupportedDBs } from 'src/config/constants';
+import { SupportedDBs } from '../../config/constants';
 
 export const getFieldsResponse = Joi.object({
   data: Joi.array().items(

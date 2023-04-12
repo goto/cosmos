@@ -1,10 +1,10 @@
-import * as Adapter from 'src/lib/adapter';
+import * as Adapter from '../../lib/adapter';
 import {
   ICreateConnectionPayload,
   ICreateConnectionTransformedPayload,
   IConnectionResponse,
   IConnection
-} from 'src/types';
+} from '../../types';
 
 export async function create(
   data: ICreateConnectionPayload

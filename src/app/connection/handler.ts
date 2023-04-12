@@ -1,6 +1,6 @@
 import Hapi from '@hapi/hapi';
 import Boom from '@hapi/boom';
-import { ICreateConnectionPayload } from 'src/types';
+import { ICreateConnectionPayload } from '../../types';
 import * as Schema from './schema';
 import * as Resource from './resource';
 

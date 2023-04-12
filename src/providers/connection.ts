@@ -5,7 +5,7 @@ import {
   IPGTablesDetails,
   ITableListItem,
   IPGTablesResult
-} from 'src/types';
+} from '../types';
 import { ScaffoldingTemplate } from '@cubejs-backend/schema-compiler/dist/src/scaffolding/ScaffoldingTemplate';
 import { ScaffoldingSchema } from '@cubejs-backend/schema-compiler/dist/src/scaffolding/ScaffoldingSchema';
 

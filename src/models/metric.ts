@@ -1,5 +1,5 @@
 import mongoose, { Schema, Model } from 'mongoose';
-import { IMetricDocument, IUpdateMetricPayload } from 'src/types';
+import { IMetricDocument, IUpdateMetricPayload } from '../types';
 
 export interface IMetricModel extends Model<IMetricDocument> {
   findByUrn(urn: string): Promise<IMetricDocument | null>;

@@ -1,5 +1,5 @@
-import Cube from 'src/models/cube';
-import { ICubesStats } from 'src/types';
+import Cube from '../../models/cube';
+import { ICubesStats } from '../../types';
 
 export const cubesStats = async (): Promise<ICubesStats | undefined> => {
   const [stats] = await Cube.getStats();
