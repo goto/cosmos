@@ -1,5 +1,5 @@
 import { v1 as uuidv1 } from 'uuid';
-import { encrypt, decrypt } from '../lib/utils';
+import { encrypt, decrypt } from './utils';
 import { ICreateConnectionPayload } from '../types';
 
 export function urn<T>(data: T): T & { urn: string } {

@@ -1,5 +1,9 @@
 import Metric from '../../models/metric';
-import { ICreateMetricPayload, IMetric, IUpdateMetricPayload } from '../../types';
+import {
+  ICreateMetricPayload,
+  IMetric,
+  IUpdateMetricPayload
+} from '../../types';
 import * as Transformer from './transformer';
 
 export const list = async (
